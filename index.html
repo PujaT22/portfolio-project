@@ -11,6 +11,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
@@ -21,29 +27,68 @@
       href="https://fonts.googleapis.com/css2?family=Macondo&family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Macondo&family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
     <style>
-      h1 {
-        font-family: "Playfair Display", serif;
+      :root {
+        --branding-color: #6c63ff;
+        --heading-font-family: "Playfair Display", serif;
+        --default-font-family: "Poppins", sans-serif;
+        --secondary-color: #f9f7fe;
+      }
+      body {
+        font-family: var(--default-font-family);
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--heading-font-family);
         font-weight: bold;
       }
+      h1 {
+        font-size: 96px;
+      }
       p {
-        font-family: "Poppins", sans-serif;
+        font-family: var(--default-font-family);
         font-weight: normal;
+      }
+      .hero {
+        background: var(--secondary-color);
+        text-align: center;
+        padding: 160px 20px;
+      }
+      .hero p {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+        color: #272142;
+      }
+      .hero h2 {
+        font-family: var(--default-font-family);
+        font-weight: normal;
+        line-height: 2;
+        font-size: 24px;
+      }
+      .btn-branding {
+        background: var(--branding-color);
+        border-radius: 4px;
+        color: white;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 15px 30px;
       }
     </style>
   </head>
 
   <body>
-    <div class="d-flex bg-warning">
-      <h1>Hello World</h1>
-      <p>Hi there</p>
-      <i class="fab fa-instagram"></i>
+    <div class="hero">
+      <p>👋Hello, I am</p>
+      <h1>Pooja</h1>
+      <h2 class="mb-5">Front-end developer based in Texas</h2>
+      <div>
+        <a href="#" class="btn btn-branding">Contact me</a>
+      </div>
     </div>
   </body>
 </html>
