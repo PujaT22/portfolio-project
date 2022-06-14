@@ -89,6 +89,9 @@ p {
 .project-description {
   padding: 120px 60px;
 }
+.open-source-code {
+  text-align: center;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
